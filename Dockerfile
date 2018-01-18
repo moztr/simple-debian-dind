@@ -10,7 +10,7 @@ RUN apt-get update &&  apt-get install -y \
      software-properties-common \
      openssh-server \
      git \
-     openjdk-8-jdk \
+     openjdk-8-jdk &&\
      apt-get -q autoremove &&\
      apt-get -q clean -y && rm -rf /var/lib/apt/lists/* && rm -f /var/cache/apt/*.bin
 
